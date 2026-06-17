@@ -8,7 +8,6 @@ require('dotenv').config();
 const app = express();
 app.use(cors());
 app.use(express.json());
-// const dns = require('dns');
 dns.setDefaultResultOrder('ipv4first');
 
 mongoose.connect(process.env.MONGO_URI)
