@@ -4,7 +4,7 @@ const API = axios.create({
     baseURL: 'http://localhost:5000/api'
 });
 
-export const getApplication = () => API.get('/applications');
+export const getApplications = () => API.get('/applications');
 export const createApplication = (data) => API.post('/applications', data);
 export const updateApplication = (id,data) => API.update(`/applications/${id}`, data);
 export const deleteApplication = (id) => API.delete(`/applications/${id}`);
