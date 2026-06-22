@@ -1,31 +1,33 @@
-Job Application Tracker
+# Job Application Tracker
+
 A full-stack web app to track job applications — built with React, Node.js, Express, and MongoDB.
-Live Demo
-🔗 job-application-tracker-three-tau.vercel.app
-Features
 
-Add, update, and delete job applications
-Track status: Applied, Interview, Rejected, Offer
-Filter applications by status
-Dashboard with live counts per status
-Data persists via MongoDB Atlas
+## Live Demo
+🔗 [job-application-tracker-three-tau.vercel.app](https://job-application-tracker-three-tau.vercel.app)
 
-Tech Stack
-Frontend: React, Vite, Tailwind CSS, Axios
+## Features
+- Add, update, and delete job applications
+- Track status: Applied, Interview, Rejected, Offer
+- Filter applications by status
+- Dashboard with live counts per status
+- Data persists via MongoDB Atlas
 
-Backend: Node.js, Express.js
+## Tech Stack
+**Frontend:** React, Vite, Tailwind CSS, Axios  
+**Backend:** Node.js, Express.js  
+**Database:** MongoDB Atlas, Mongoose  
+**Deployment:** Vercel (frontend), Render (backend)
 
-Database: MongoDB Atlas, Mongoose
+## Getting Started
 
-Deployment: Vercel (frontend), Render (backend)
-Getting Started
-Prerequisites
+### Prerequisites
+- Node.js
+- MongoDB Atlas account
 
-Node.js
-MongoDB Atlas account
+### Installation
 
-Installation
-bash# Clone the repo
+```bash
+# Clone the repo
 git clone https://github.com/Ajay-Naik/Job_Application_Tracker.git
 
 # Backend
@@ -38,7 +40,10 @@ node server.js
 cd ../client
 npm install
 npm run dev
-Project Structure
+```
+
+## Project Structure
+```
 Job_Application_Tracker/
 ├── client/          # React frontend
 │   └── src/
@@ -54,3 +59,4 @@ Job_Application_Tracker/
     ├── routes/
     │   └── applications.js
     └── server.js
+```
