@@ -11,7 +11,7 @@ app.use(express.json());
 dns.setDefaultResultOrder("ipv4first");
 
 mongoose
-  .connect(process.env.MONGO_URI)
+  .connect(process.env.MONGO_URL)
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
